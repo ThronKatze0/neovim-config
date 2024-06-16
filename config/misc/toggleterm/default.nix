@@ -10,6 +10,15 @@ _: {
 
     keymaps = [
       {
+        key = "<F7>";
+        mode = [ "n" "t" "i" "v" ];
+        action = "<cmd>ToggleTerm direction=float<cr>";
+        options = {
+          silent = true;
+          desc = "ToggleTerm float";
+        };
+      }
+      {
         key = "<leader>tf";
         mode = [ "n" ];
         action = "<cmd>ToggleTerm direction=float<cr>";
