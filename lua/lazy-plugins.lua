@@ -29,6 +29,7 @@ require('lazy').setup({
   -- include a plugin definition from file lua/path/name.lua
 
   require 'custom/plugins',
+  require 'custom/plugins/lazygit',
 
   require 'kickstart/plugins/gitsigns',
 

@@ -25,5 +25,4 @@ return {
       -- your options here
     },
   },
-  require 'lazygit',
 }
