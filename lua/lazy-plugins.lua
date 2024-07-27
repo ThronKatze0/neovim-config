@@ -28,7 +28,15 @@ require('lazy').setup({
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
-  require 'plugins/cmp',
+  -- require 'plugins/cmp',
+  require 'plugins/coq',
+  require 'plugins/toggleterm',
+  require 'plugins/intellitab',
+  require 'plugins/better-escape',
+  require 'plugins/yazi',
+  require 'plugins/fine-cmdline',
+  require 'plugins/leap',
+  require 'plugins/notify',
   require 'plugins/autopairs',
   require 'plugins/conform',
   require 'plugins/debug',
