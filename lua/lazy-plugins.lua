@@ -28,31 +28,6 @@ require('lazy').setup({
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
 
-  -- require 'plugins/cmp',
-  require 'plugins/coq',
-  require 'plugins/toggleterm',
-  require 'plugins/intellitab',
-  require 'plugins/better-escape',
-  require 'plugins/yazi',
-  require 'plugins/fine-cmdline',
-  require 'plugins/leap',
-  require 'plugins/notify',
-  require 'plugins/autopairs',
-  require 'plugins/conform',
-  require 'plugins/debug',
-  require 'plugins/gitsigns',
-  require 'plugins/indent_line',
-  require 'plugins/lazygit',
-  require 'plugins/lint',
-  require 'plugins/lspconfig',
-  require 'plugins/mini',
-  require 'plugins/telescope',
-  require 'plugins/todo-comments',
-  require 'plugins/tokyonight',
-  require 'plugins/treesitter',
-  require 'plugins/which-key',
-  require 'plugins/coq',
-
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- place them in the correct locations.
@@ -73,7 +48,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  -- { import = 'custom.plugins' },
+  { import = 'plugins' },
 }, {
   ui = {
     -- If you are using a Nerd Font: set icons to an empty table which will use the
