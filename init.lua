@@ -105,5 +105,18 @@ require 'lazy-bootstrap'
 -- [[ Configure and install plugins ]]
 require 'lazy-plugins'
 
+require('lspconfig').arduino_language_server.setup {
+  cmd = {
+    'arduino-language-server',
+    '-cli-config',
+    '~/.arduino15/arduino-cli.yaml',
+    '-cli',
+    'arduino-cli',
+    '-clangd',
+    'clangd',
+    '-fqbn',
+    'arduino:avr:uno',
+  },
+}
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
