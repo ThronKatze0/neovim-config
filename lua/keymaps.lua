@@ -62,4 +62,10 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
+-- [[ Debugging ]]
+vim.keymap.set('n', '<leader>du', ':lua require("dapui").toggle()<CR>', { desc = 'Open/Close Debug UI'})
+vim.keymap.set('n', '<leader>dt', ':DapTerminate<CR>', { desc = 'Terminate Debug Session'})
+vim.keymap.set('n', '<leader>dc', ':DapContinue<CR>', { desc = 'Continue Debug Session'})
+vim.keymap.set('n', '<leader>do', ':DapStepOver<CR>', { desc = 'Step over line'})
+
 -- vim: ts=2 sts=2 sw=2 et
