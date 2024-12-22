@@ -14,8 +14,9 @@ return {
       -- `neodev` configures Lua LSP for your Neovim config, runtime and plugins
       -- used for completion, annotations and signatures of Neovim apis
       { 'folke/neodev.nvim', opts = {} },
+      { 'saghen/blink.cmp' },
     },
-    config = function()
+    config = function(_, opts)
       -- Brief aside: **What is LSP?**
       --
       -- LSP is an initialism you've probably heard, but might not understand what it is.
@@ -212,9 +213,10 @@ return {
             -- by the server configuration above. Useful when disabling
             -- certain features of an LSP (for example, turning off formatting for tsserver)
             -- server.capabilities = vim.tbl_deep_extend('force', {}, capabilities, server.capabilities or {})
-            local capabilities = require('cmp_nvim_lsp').default_capabilities()
-            -- Replace <YOUR_LSP_SERVER> with each lsp server you've enabled.
-            require('lspconfig')[server_name].setup { capabilities = capabilities }
+            local capabilities = require('blink.cmp').get_lsp_capabilities()
+            local lspconfig = require 'lspconfig'
+
+            lspconfig[server_name].setup { capabilities = capabilities }
           end,
         },
       }
