@@ -22,6 +22,14 @@ return {
         name = 'Docs',
         path = '~/clones/Docs',
       },
+      {
+        name = 'School',
+        path = '~/school/3BHIF',
+      },
+      {
+        name = 'SYP',
+        path = '~/clones/TeamD',
+      },
     },
 
     -- see below for full list of options 👇
