@@ -62,3 +62,4 @@ vim.opt.scrolloff = 10
 vim.opt.conceallevel = 2
 
 -- vim: ts=2 sts=2 sw=2 et
+vim.opt.guicursor = 'n-v-i-c:block-Cursor'
